@@ -20,5 +20,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('scheduler.urls')),
-    path('api/token/', include('scheduler.jwt_urls')),   # JWT (se configurado)
+    path('api/token/', include('scheduler.jwt_urls')),
 ]
